@@ -16,6 +16,13 @@
         },
       });
       System.import('app/app');
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/src/sw.js')
+          .then(function() {
+            console.log('Service Worker Registered!')
+          });
+      }
     </script>
   </head>
   <body>
