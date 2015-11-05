@@ -5,7 +5,7 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
       caches.open('byon').then(function(cache) {
         console.log('opened cache')
-        cache.addAll(['/src/'])
+        cache.addAll(['/byon/src/'])
       })
   )
 })

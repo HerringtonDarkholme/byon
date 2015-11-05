@@ -18,7 +18,7 @@
       System.import('app/app');
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-          .register('/src/sw.js')
+          .register('sw.js')
           .then(function() {
             console.log('Service Worker Registered!')
           });
