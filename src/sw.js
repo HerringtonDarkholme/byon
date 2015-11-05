@@ -1,4 +1,4 @@
-importScripts('/src/cache-polyfill.js')
+importScripts('cache-polyfill.js')
 
 self.addEventListener('install', function(e) {
   console.log('installing service worker!')
