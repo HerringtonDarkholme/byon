@@ -1,8 +1,10 @@
 import {Component, View, Input, NgSwitch} from 'angular2/angular2'
+import {NgClass} from 'angular2/angular2'
 
 @Component({
   selector: 'chino',
   templateUrl: 'chino/chino.html',
+  directives: [NgClass]
 })
 export class Chino {
   _choice: string
